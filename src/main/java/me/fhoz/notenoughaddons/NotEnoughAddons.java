@@ -117,7 +117,7 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/SlimefunGuguProject/NotEnoughAddons/issues";
+        return "https://github.com/DrakesCraft-Labs/NotEnoughAddons/issues";
     }
 
     @Nonnull

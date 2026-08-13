@@ -111,12 +111,7 @@
             <version>1.18.34</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.bstats</groupId>
-            <artifactId>bstats-bukkit</artifactId>
-            <version>3.0.0</version>
-            <scope>provided</scope>
-        </dependency>
+        
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
