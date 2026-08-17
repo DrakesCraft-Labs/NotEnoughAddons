@@ -1,30 +1,42 @@
-# NotEnoughAddons - 多彩科技
-
-这是一个添加了一些炫酷物品的Slimefun附属插件。
-
-## 下载
-
-点击这里下载 NotEnoughAddons: [下载 NotEnoughAddons](https://builds.guizhanss.net/SlimefunGuguProject/NotEnoughAddons/master)
-
 <p align="center">
-  <a href="https://github.com/SlimefunGuguProject/NotEnoughAddons/actions/workflows/maven.yml">
-    <img src="https://github.com/SlimefunGuguProject/NotEnoughAddons/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
-  </a>
-  <a href="https://builds.guizhanss.net/SlimefunGuguProject/NotEnoughAddons/master">
-    <img src="https://builds.guizhanss.net/f/SlimefunGuguProject/NotEnoughAddons/master/badge.svg" alt="Build status"/>
-  </a>
+  <img src="docs/banner.svg" width="100%" alt="NOTENOUGHADDONS Animated Banner" />
 </p>
 
-## 内容
+# NotEnoughAddons
 
-### 机器
+Addon de **Slimefun 4** que reúne una variada colección de maquinaria económica, herramientas de conveniencia, generadores y gadgets interactivos. Portado, limpiado de telemetría y mantenido por **DrakesCraft Labs** para Paper/Purpur 1.21.11 en Java 21.
 
-- **经济型矿粉制造机**: 前期就可以制作的速度较慢的矿粉制造机，懒狗必备。
-- **飞行泡泡**: 可以让周围45格内的玩家获得创造模式飞行能力。
+---
 
-### 物品
+## 🎯 Objetivo
 
-- **天使方块**: 可以在脚下放置一个方块，在空中时非常好用。
-- **矿物背包**: 一个54格的背包，可以自动收集捡起来的矿物。
+Ofrecer alternativas de maquinaria accesibles para etapas tempranas (*early game*) y artilugios útiles para constructores e ingenieros de Slimefun sin alterar el balance de endgame.
 
-还有各种材质的泰拉瑞亚武器。
+---
+
+## ⚡ Características Principales
+
+- **Máquinas Económicas de Procesamiento**:
+  - Trituradoras y procesadores de polvo de bajo consumo pensados para inicios de partida.
+- **Burbujas de Vuelo Temporal**:
+  - Zonas de levitación y vuelo controlado en áreas delimitadas de construcción.
+- **Herramientas y Gadgets**:
+  - Imanes de ítems, varitas de construcción y utilidades de recolección rápida.
+- **Traducción Depurada**:
+  - Textos completamente en español.
+
+---
+
+## 🛠️ Entorno y Compatibilidad
+
+- **Servidor**: Paper / Purpur 1.21.11
+- **Java**: 21
+- **Dependencias**:
+  - `Slimefun4-Drake`
+
+---
+
+## 📜 Créditos y Origen
+
+- **Autor original**: `SlimefunGuguProject`
+- **Adaptación y Mantenimiento 1.21.11**: **DrakesCraft Labs**

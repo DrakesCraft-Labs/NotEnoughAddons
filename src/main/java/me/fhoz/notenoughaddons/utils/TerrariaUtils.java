@@ -74,54 +74,54 @@ public final class TerrariaUtils {
 
     public static String useTimeConv(int t) {
         if (t <= 8) {
-            return "&f超快";
+            return "&fsúper rápido";
         } else if (9 <= t && t <= 20) {
-            return "&f很快";
+            return "&fpronto";
         } else if (21 <= t && t <= 25) {
-            return "&f快";
+            return "&frápido";
         } else if (26 <= t && t <= 30) {
-            return "&f普通";
+            return "&fcomún";
         } else if (31 <= t && t <= 35) {
-            return "&f慢";
+            return "&flento";
         } else if (36 <= t && t <= 45) {
-            return "&f很慢";
+            return "&fmuy lento";
         } else if (46 <= t && t <= 55) {
-            return "&f极慢";
+            return "&fExtremadamente lento";
         } else {
-            return "&f蜗牛";
+            return "&fcaracoles";
         }
     }
 
     public static String kbConv(double k) {
         if (k == 0) {
-            return "&f无击退力";
+            return "&fSin retroceso";
         } else if (k <= 1.5) {
-            return "&f极弱击退力";
+            return "&fRechazo muy débil";
         } else if (k <= 3) {
-            return "&f很弱击退力";
+            return "&fRechazo muy débil";
         } else if (k <= 4) {
-            return "&f较弱击退力";
+            return "&fRechazo débil";
         } else if (k <= 6) {
-            return "&f普通击退力";
+            return "&fRechazo normal";
         } else if (k <= 7) {
-            return "&f较强击退力";
+            return "&fFuerte poder de retroceso";
         } else if (k <= 9) {
-            return "&f很强击退力";
+            return "&fRechazo muy fuerte";
         } else if (k <= 11) {
-            return "&f极强击退力";
+            return "&fPoder de retroceso extremadamente fuerte";
         } else if (k > 11) {
-            return "&f疯狂击退力";
+            return "&fPoder de retroceso loco";
         }
-        return "&f未知击退力";
+        return "&fRechazo desconocido";
     }
 
     public static String getDMG(double d) {
 
-        return "&f" + (int) d + " 近战伤害";
+        return "&f" + (int) d + " daño cuerpo a cuerpo";
     }
 
     public static String getCC(double c) {
-        return "&f" + (int) c * 100 + "% 暴击率";
+        return "&f" + (int) c * 100 + "% Tasa de golpes críticos";
     }
 }
 

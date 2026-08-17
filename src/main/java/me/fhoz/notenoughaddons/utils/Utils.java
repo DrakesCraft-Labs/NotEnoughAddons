@@ -19,7 +19,7 @@ public final class Utils {
     }
 
     public static void send(CommandSender p, String message) {
-        p.sendMessage(color("&2&n&l多&a彩&2&l科&r&a技 &r&7> &r" + message));
+        p.sendMessage(color("&2&n&lmuchos&acolor&2&ldivisión&r&atecnología &r&7> &r" + message));
     }
 
     public static String checkAllowed(String[] args) {

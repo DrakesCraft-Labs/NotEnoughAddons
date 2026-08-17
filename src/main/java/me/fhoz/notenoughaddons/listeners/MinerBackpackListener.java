@@ -1,8 +1,8 @@
 package me.fhoz.notenoughaddons.listeners;
 
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerBackpack;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import com.github.drakescraft_labs.slimefun4.api.player.PlayerBackpack;
+import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
+import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
 import me.fhoz.notenoughaddons.NotEnoughAddons;
 import me.fhoz.notenoughaddons.items.backpacks.MinerBackpack;
 import me.fhoz.notenoughaddons.utils.Utils;
@@ -61,7 +61,7 @@ public class MinerBackpackListener implements Listener {
     private void addOre(Player p, ItemStack minerBackpackItem, PlayerBackpack backpack, ItemStack pickedItemStack) {
         Inventory inv = backpack.getInventory();
         if (inv.firstEmpty() == -1) {
-            Utils.send(p, "&6矿工背包 &r已满");
+            Utils.send(p, "&6Mochila de minero &rLleno");
             return;
         }
         Map<Integer, ItemStack> notRemoved = p.getInventory().removeItem(pickedItemStack);

@@ -1,8 +1,8 @@
 package me.fhoz.notenoughaddons;
 
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
+import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
 import lombok.SneakyThrows;
 import me.fhoz.notenoughaddons.items.AngelBlock;
 import me.fhoz.notenoughaddons.items.backpacks.MinerBackpack;
@@ -10,7 +10,6 @@ import me.fhoz.notenoughaddons.listeners.MinerBackpackListener;
 import me.fhoz.notenoughaddons.utils.NEAItems;
 import me.fhoz.notenoughaddons.utils.Utils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -38,7 +37,6 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
         Config cfg = new Config(this);
 
         if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Build ")) {
-            new GuizhanBuildsUpdater(this, getFile(), "SlimefunGuguProject", "NotEnoughAddons", "master", false, "zh-CN").start();
         }
 
         // Registering Items
@@ -54,7 +52,7 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
     @Override
     public boolean onCommand(@Nonnull CommandSender sender, @Nonnull Command cmd, @Nonnull String label, String[] args) {
         if (!(sender instanceof Player)) {
-            Utils.send(sender, "&c只有玩家才能执行该指令");
+            Utils.send(sender, "&cSólo los jugadores pueden ejecutar este comando.");
             return true;
         }
 
@@ -69,7 +67,7 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
                 return true;
             case "VERSION":
             case "V":
-                Utils.send(p, "&e当前插件版本为: " + this.getPluginVersion());
+                Utils.send(p, "&eLa versión actual del complemento es: " + this.getPluginVersion());
                 return true;
         }
 
@@ -78,7 +76,7 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
                 case "ADDINFO":
 
                     if (args.length != 3) {
-                        Utils.send(p, "&c请指定键值");
+                        Utils.send(p, "&cPor favor especifique el valor clave");
 
                     } else {
                         RayTraceResult rayResult = p.rayTraceBlocks(5d);
@@ -86,10 +84,10 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
                             && BlockStorage.hasBlockInfo(rayResult.getHitBlock())) {
 
                             BlockStorage.addBlockInfo(rayResult.getHitBlock(), args[1], args[2]);
-                            Utils.send(p, "&a已设置信息.");
+                            Utils.send(p, "&aConjunto de información.");
 
                         } else {
-                            Utils.send(p, "&c你必须看向一个Slimefun方块");
+                            Utils.send(p, "&ctienes que mirar unSlimefunbloquear");
                         }
                     }
                     return true;
@@ -99,7 +97,7 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
             }
         }
 
-        Utils.send(p, "&c指令不存在");
+        Utils.send(p, "&cEl comando no existe");
         return false;
     }
 
@@ -115,7 +113,7 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
         }
 
         if (players > 0) {
-            Bukkit.getLogger().log(Level.INFO, "已保存 {0} 位玩家的数据!", players);
+            Bukkit.getLogger().log(Level.INFO, "salvado {0} datos del jugador!", players);
         }
     }
 

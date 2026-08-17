@@ -1,10 +1,10 @@
 package me.fhoz.notenoughaddons.utils;
 
 import dev.j3fftw.extrautils.utils.LoreBuilderDynamic;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.core.attributes.MachineTier;
-import io.github.thebusybiscuit.slimefun4.core.attributes.MachineType;
-import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.core.attributes.MachineTier;
+import com.github.drakescraft_labs.slimefun4.core.attributes.MachineType;
+import com.github.drakescraft_labs.slimefun4.utils.LoreBuilder;
 import me.fhoz.notenoughaddons.machines.BudgetDustFabricator;
 import me.fhoz.notenoughaddons.terraria.weapons.shortsword.CopperShortsword;
 import me.fhoz.notenoughaddons.terraria.weapons.shortsword.GoldShortsword;
@@ -27,12 +27,12 @@ public class NEAItems {
     // Machines
     public static final SlimefunItemStack BUDGET_DUST_FABRICATOR = new SlimefunItemStack("BUDGET_DUST_FABRICATOR",
         Material.CRACKED_STONE_BRICKS,
-        "&6经济型矿粉制造机",
+        "&6Máquina económica para fabricar polvo mineral",
         "",
-        "&7一个经济型多合一机器,",
-        "&7可以直接使用圆石或者其他变种来获取矿粉",
+        "&7Una máquina económica todo en uno,",
+        "&7Puedes utilizar directamente adoquín u otras variantes para obtener polvo mineral.",
         "",
-        "&7&o为懒狗制作的机器...",
+        "&7&oMáquinas hechas para perros perezosos...",
         "",
         LoreBuilder.machine(MachineTier.GOOD, MachineType.MACHINE),
         LoreBuilder.speed(1),
@@ -42,9 +42,9 @@ public class NEAItems {
 
     public static final SlimefunItemStack FLYING_BUBBLE = new SlimefunItemStack("FLYING_BUBBLE",
         Material.CRYING_OBSIDIAN,
-        "&6飞行泡泡",
+        "&6burbujas voladoras",
         "",
-        "&f可以在周围45格内获得创造模式飞行的能力",
+        "&fpuede estar cerca45Obtenga la capacidad de volar en modo creativo dentro de la cuadrícula.",
         "",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerPerSecond(128)
@@ -52,10 +52,10 @@ public class NEAItems {
 
     public static final SlimefunItemStack ANGEL_BLOCK = new SlimefunItemStack("ANGEL_BLOCK",
         Material.FEATHER,
-        "&6天使方块",
+        "&6cubo de angel",
         "",
-        "&7在你脚下放置一个方块",
-        "&7当你在空中时非常好用",
+        "&7Coloca un bloque debajo de tus pies.",
+        "&7Muy útil cuando estás en el aire.",
         "",
         LoreBuilder.RIGHT_CLICK_TO_USE
     );
@@ -63,13 +63,13 @@ public class NEAItems {
 
     public static final SlimefunItemStack MINER_BACKPACK = new SlimefunItemStack("MINER_BACKPACK",
         "8dcc6eb40f3bada41e4339888d6d207437598bdbd175c2e731191d5a9a42d3c8",
-        "&6矿工背包",
+        "&6Mochila de minero",
         "",
-        "&f可以存储矿物",
-        "&f在捡起矿物时自动存入",
-        "&f在物品栏中时生效",
+        "&fPuede almacenar minerales",
+        "&fDeposite automáticamente al recoger minerales.",
+        "&fEfectivo cuando está en inventario",
         "",
-        "&7大小: &e54 (大箱子)",
+        "&7tamaño: &e54 (caja grande)",
         "",
         "&7ID: <ID>",
         "",
@@ -82,7 +82,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_COPPER = new SlimefunItemStack("SHORTSWORD_COPPER",
         Material.WOODEN_SWORD,
-        "&f铜短剑",
+        "&fdaga de cobre",
         TerrariaUtils.getDMG(CopperShortsword.getDMG()),
         TerrariaUtils.getCC(CopperShortsword.getCC()),
         TerrariaUtils.useTimeConv(CopperShortsword.getUseTime()),
@@ -91,7 +91,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_TIN = new SlimefunItemStack("SHORTSWORD_TIN",
         Material.WOODEN_SWORD,
-        "&f锡短剑",
+        "&fdaga de hojalata",
         TerrariaUtils.getDMG(TinShortsword.getDMG()),
         TerrariaUtils.getCC(TinShortsword.getCC()),
         TerrariaUtils.useTimeConv(TinShortsword.getUseTime()),
@@ -100,7 +100,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_IRON = new SlimefunItemStack("SHORTSWORD_IRON",
         Material.WOODEN_SWORD,
-        "&f铁短剑",
+        "&fdaga de hierro",
         TerrariaUtils.getDMG(IronShortsword.getDMG()),
         TerrariaUtils.getCC(IronShortsword.getCC()),
         TerrariaUtils.useTimeConv(IronShortsword.getUseTime()),
@@ -109,7 +109,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_LEAD = new SlimefunItemStack("SHORTSWORD_LEAD",
         Material.WOODEN_SWORD,
-        "&f铅短剑",
+        "&fdaga de plomo",
         TerrariaUtils.getDMG(LeadShortsword.getDMG()),
         TerrariaUtils.getCC(LeadShortsword.getCC()),
         TerrariaUtils.useTimeConv(LeadShortsword.getUseTime()),
@@ -118,7 +118,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_SILVER = new SlimefunItemStack("SHORTSWORD_SILVER",
         Material.WOODEN_SWORD,
-        "&f银短剑",
+        "&fdaga de plata",
         TerrariaUtils.getDMG(SilverShortsword.getDMG()),
         TerrariaUtils.getCC(SilverShortsword.getCC()),
         TerrariaUtils.useTimeConv(SilverShortsword.getUseTime()),
@@ -127,7 +127,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_TUNGSTEN = new SlimefunItemStack("SHORTSWORD_TUNGSTEN",
         Material.WOODEN_SWORD,
-        "&f钨短剑",
+        "&fdaga de tungsteno",
         TerrariaUtils.getDMG(TungstenShortsword.getDMG()),
         TerrariaUtils.getCC(TungstenShortsword.getCC()),
         TerrariaUtils.useTimeConv(TungstenShortsword.getUseTime()),
@@ -136,7 +136,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_GOLD = new SlimefunItemStack("SHORTSWORD_GOLD",
         Material.WOODEN_SWORD,
-        "&f金短剑",
+        "&fdaga dorada",
         TerrariaUtils.getDMG(GoldShortsword.getDMG()),
         TerrariaUtils.getCC(GoldShortsword.getCC()),
         TerrariaUtils.useTimeConv(GoldShortsword.getUseTime()),
@@ -145,7 +145,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_PLATINUM = new SlimefunItemStack("SHORTSWORD_PLATINUM",
         Material.WOODEN_SWORD,
-        "&f铂金短剑",
+        "&fdaga de platino",
         TerrariaUtils.getDMG(PlatinumShortsword.getDMG()),
         TerrariaUtils.getCC(PlatinumShortsword.getCC()),
         TerrariaUtils.useTimeConv(PlatinumShortsword.getUseTime()),

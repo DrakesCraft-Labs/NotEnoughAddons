@@ -1,11 +1,11 @@
 package me.fhoz.notenoughaddons;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.groups.NestedItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.groups.SubItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 import me.fhoz.notenoughaddons.items.AngelBlock;
 import me.fhoz.notenoughaddons.items.backpacks.MinerBackpack;
 import me.fhoz.notenoughaddons.items.electric.FlyingBubble;
@@ -32,17 +32,17 @@ public final class NEAItemSetup {
     // ItemGroup
     private static final NestedItemGroup notenoughaddons = new NestedItemGroup(
         new NamespacedKey(NotEnoughAddons.getInstance(), "notenoughaddons"),
-        new CustomItemStack(Material.COMMAND_BLOCK, "&2多彩科技")
+        new CustomItemStack(Material.COMMAND_BLOCK, "&2Tecnología colorida")
     );
 
     private static final ItemGroup machines = new SubItemGroup(
         new NamespacedKey(NotEnoughAddons.getInstance(), "machines"), notenoughaddons,
-        new CustomItemStack(Material.DEAD_BUSH, "&b多彩科技 - 机器"), 1
+        new CustomItemStack(Material.DEAD_BUSH, "&bTecnología colorida - máquina"), 1
     );
 
     private static final ItemGroup items = new SubItemGroup(
         new NamespacedKey(NotEnoughAddons.getInstance(), "items"), notenoughaddons,
-        new CustomItemStack(Material.LEAD, "&b多彩科技 - 物品"), 2
+        new CustomItemStack(Material.LEAD, "&bTecnología colorida - cosa"), 2
     );
 
 

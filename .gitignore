@@ -8,3 +8,6 @@
 dependency-reduced-pom.xml
 .DS_Store
 .vscode
+
+build/
+.gradle/
