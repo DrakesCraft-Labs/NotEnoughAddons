@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/NotEnoughAddons/master/docs/banner.svg" width="100%" alt="NOTENOUGHADDONS Animated Banner" />
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/NotEnoughAddons/master/banner.svg" width="100%" alt="NOTENOUGHADDONS Animated Banner" />
 </p>
 
 # NotEnoughAddons
