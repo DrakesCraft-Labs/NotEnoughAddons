@@ -65,7 +65,7 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
                 return true;
             case "VERSION":
             case "V":
-                Utils.send(p, "&eVersión del plugin: " + this.getPluginVersion());
+                Utils.send(p, "&ePlugin version: " + this.getPluginVersion());
                 return true;
         }
 
@@ -82,7 +82,7 @@ public class NotEnoughAddons extends JavaPlugin implements SlimefunAddon {
                             && BlockStorage.hasBlockInfo(rayResult.getHitBlock())) {
 
                             BlockStorage.addBlockInfo(rayResult.getHitBlock(), args[1], args[2]);
-                            Utils.send(p, "&aInformación guardada.");
+                            Utils.send(p, "&aInformation saved.");
 
                         } else {
                             Utils.send(p, "&cTienes que estar mirando a un bloque de Slimefun");

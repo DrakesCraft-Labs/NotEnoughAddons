@@ -26,12 +26,12 @@ public class NEAItems {
     // Machines
     public static final SlimefunItemStack BUDGET_DUST_FABRICATOR = new SlimefunItemStack("BUDGET_DUST_FABRICATOR",
         Material.CRACKED_STONE_BRICKS,
-        "&6Fabricador de Polvo Económico",
+        "&6Budget Dust Fabricator",
         "",
-        "&7Una máquina todo en uno y barata,",
-        "&7saca polvo de mineral directamente de la roca o sus variantes",
+        "&7An all-in-one and cheap machine,",
+        "&7extracts dust directly from cobblestone or its variants",
         "",
-        "&7&oUna máquina para vagos...",
+        "&7&oA machine for the lazy...",
         "",
         LoreBuilder.machine(MachineTier.GOOD, MachineType.MACHINE),
         LoreBuilder.speed(1),
@@ -41,9 +41,9 @@ public class NEAItems {
 
     public static final SlimefunItemStack FLYING_BUBBLE = new SlimefunItemStack("FLYING_BUBBLE",
         Material.CRYING_OBSIDIAN,
-        "&6Burbuja Voladora",
+        "&6Flying Bubble",
         "",
-        "&fDeja volar en modo creativo a 45 bloques a la redonda",
+        "&fAllows creative flight within a 45 block radius",
         "",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerPerSecond(128)
@@ -51,24 +51,23 @@ public class NEAItems {
 
     public static final SlimefunItemStack ANGEL_BLOCK = new SlimefunItemStack("ANGEL_BLOCK",
         Material.FEATHER,
-        "&6Bloque Ángel",
+        "&6Angel Block",
         "",
-        "&7Coloca un bloque bajo tus pies",
-        "&7Viene muy bien cuando estás en el aire",
+        "&7Places a block beneath your feet",
+        "&7Very useful while in mid-air",
         "",
         LoreBuilder.RIGHT_CLICK_TO_USE
     );
 
-
     public static final SlimefunItemStack MINER_BACKPACK = new SlimefunItemStack("MINER_BACKPACK",
         "8dcc6eb40f3bada41e4339888d6d207437598bdbd175c2e731191d5a9a42d3c8",
-        "&6Mochila de Minero",
+        "&6Miner's Backpack",
         "",
-        "&fGuarda minerales",
-        "&fLos guarda solos al recogerlos",
-        "&fBasta con llevarlo en el inventario",
+        "&fStores ores",
+        "&fAutomatically collects them on pickup",
+        "&fJust keep it in your inventory",
         "",
-        "&7Tamaño: &e54 (cofre grande)",
+        "&7Size: &e54 (Double Chest)",
         "",
         "&7ID: <ID>",
         "",
@@ -81,7 +80,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_COPPER = new SlimefunItemStack("SHORTSWORD_COPPER",
         Material.WOODEN_SWORD,
-        "&fDaga de Cobre",
+        "&fCopper Shortsword",
         TerrariaUtils.getDMG(CopperShortsword.getDMG()),
         TerrariaUtils.getCC(CopperShortsword.getCC()),
         TerrariaUtils.useTimeConv(CopperShortsword.getUseTime()),
@@ -90,7 +89,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_TIN = new SlimefunItemStack("SHORTSWORD_TIN",
         Material.WOODEN_SWORD,
-        "&fDaga de Estaño",
+        "&fTin Shortsword",
         TerrariaUtils.getDMG(TinShortsword.getDMG()),
         TerrariaUtils.getCC(TinShortsword.getCC()),
         TerrariaUtils.useTimeConv(TinShortsword.getUseTime()),
@@ -99,7 +98,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_IRON = new SlimefunItemStack("SHORTSWORD_IRON",
         Material.WOODEN_SWORD,
-        "&fDaga de Hierro",
+        "&fIron Shortsword",
         TerrariaUtils.getDMG(IronShortsword.getDMG()),
         TerrariaUtils.getCC(IronShortsword.getCC()),
         TerrariaUtils.useTimeConv(IronShortsword.getUseTime()),
@@ -108,7 +107,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_LEAD = new SlimefunItemStack("SHORTSWORD_LEAD",
         Material.WOODEN_SWORD,
-        "&fDaga de Plomo",
+        "&fLead Shortsword",
         TerrariaUtils.getDMG(LeadShortsword.getDMG()),
         TerrariaUtils.getCC(LeadShortsword.getCC()),
         TerrariaUtils.useTimeConv(LeadShortsword.getUseTime()),
@@ -117,7 +116,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_SILVER = new SlimefunItemStack("SHORTSWORD_SILVER",
         Material.WOODEN_SWORD,
-        "&fDaga de Plata",
+        "&fSilver Shortsword",
         TerrariaUtils.getDMG(SilverShortsword.getDMG()),
         TerrariaUtils.getCC(SilverShortsword.getCC()),
         TerrariaUtils.useTimeConv(SilverShortsword.getUseTime()),
@@ -126,7 +125,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_TUNGSTEN = new SlimefunItemStack("SHORTSWORD_TUNGSTEN",
         Material.WOODEN_SWORD,
-        "&fDaga de Tungsteno",
+        "&fTungsten Shortsword",
         TerrariaUtils.getDMG(TungstenShortsword.getDMG()),
         TerrariaUtils.getCC(TungstenShortsword.getCC()),
         TerrariaUtils.useTimeConv(TungstenShortsword.getUseTime()),
@@ -135,7 +134,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_GOLD = new SlimefunItemStack("SHORTSWORD_GOLD",
         Material.WOODEN_SWORD,
-        "&fDaga de Oro",
+        "&fGold Shortsword",
         TerrariaUtils.getDMG(GoldShortsword.getDMG()),
         TerrariaUtils.getCC(GoldShortsword.getCC()),
         TerrariaUtils.useTimeConv(GoldShortsword.getUseTime()),
@@ -144,7 +143,7 @@ public class NEAItems {
 
     public static final SlimefunItemStack SHORTSWORD_PLATINUM = new SlimefunItemStack("SHORTSWORD_PLATINUM",
         Material.WOODEN_SWORD,
-        "&fDaga de Platino",
+        "&fPlatinum Shortsword",
         TerrariaUtils.getDMG(PlatinumShortsword.getDMG()),
         TerrariaUtils.getCC(PlatinumShortsword.getCC()),
         TerrariaUtils.useTimeConv(PlatinumShortsword.getUseTime()),

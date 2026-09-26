@@ -37,12 +37,12 @@ public final class NEAItemSetup {
 
     private static final ItemGroup machines = new SubItemGroup(
         new NamespacedKey(NotEnoughAddons.getInstance(), "machines"), notenoughaddons,
-        new CustomItemStack(Material.DEAD_BUSH, "&bNotEnoughAddons - Máquinas"), 1
+        new CustomItemStack(Material.DEAD_BUSH, "&bNotEnoughAddons - Machines"), 1
     );
 
     private static final ItemGroup items = new SubItemGroup(
         new NamespacedKey(NotEnoughAddons.getInstance(), "items"), notenoughaddons,
-        new CustomItemStack(Material.LEAD, "&bNotEnoughAddons - Objetos"), 2
+        new CustomItemStack(Material.LEAD, "&bNotEnoughAddons - Items"), 2
     );
 
 

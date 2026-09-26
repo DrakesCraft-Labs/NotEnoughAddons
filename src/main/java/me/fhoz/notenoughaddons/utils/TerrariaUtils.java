@@ -74,54 +74,54 @@ public final class TerrariaUtils {
 
     public static String useTimeConv(int t) {
         if (t <= 8) {
-            return "&fRapidísimo";
+            return "&fInsanely fast";
         } else if (9 <= t && t <= 20) {
-            return "&fMuy rápido";
+            return "&fVery fast";
         } else if (21 <= t && t <= 25) {
-            return "&fRápido";
+            return "&fFast";
         } else if (26 <= t && t <= 30) {
-            return "&fNormal";
+            return "&fAverage";
         } else if (31 <= t && t <= 35) {
-            return "&fLento";
+            return "&fSlow";
         } else if (36 <= t && t <= 45) {
-            return "&fMuy lento";
+            return "&fVery slow";
         } else if (46 <= t && t <= 55) {
-            return "&fLentísimo";
+            return "&fExtremely slow";
         } else {
-            return "&fCaracol";
+            return "&fSnail";
         }
     }
 
     public static String kbConv(double k) {
         if (k == 0) {
-            return "&fSin retroceso";
+            return "&fNo knockback";
         } else if (k <= 1.5) {
-            return "&fRetroceso mínimo";
+            return "&fExtremely weak";
         } else if (k <= 3) {
-            return "&fRetroceso muy débil";
+            return "&fVery weak";
         } else if (k <= 4) {
-            return "&fRetroceso débil";
+            return "&fWeak";
         } else if (k <= 6) {
-            return "&fRetroceso normal";
+            return "&fAverage knockback";
         } else if (k <= 7) {
-            return "&fRetroceso fuerte";
+            return "&fStrong";
         } else if (k <= 9) {
-            return "&fRetroceso muy fuerte";
+            return "&fVery strong";
         } else if (k <= 11) {
-            return "&fRetroceso extremo";
+            return "&fExtremely strong";
         } else if (k > 11) {
-            return "&fRetroceso brutal";
+            return "&fInsane knockback";
         }
-        return "&fRetroceso desconocido";
+        return "&fUnknown knockback";
     }
 
     public static String getDMG(double d) {
 
-        return "&f" + (int) d + " de daño cuerpo a cuerpo";
+        return "&f" + (int) d + " melee damage";
     }
 
     public static String getCC(double c) {
-        return "&f" + (int) c * 100 + "% de probabilidad de crítico";
+        return "&f" + (int) (c * 100) + "% critical strike chance";
     }
 }
 
