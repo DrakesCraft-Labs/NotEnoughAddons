@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -73,12 +74,23 @@ public class FlyingBubble extends AMachine {
             }
         }
 
-        for (UUID uuid : playersInBubble) {
+        // Remove through the iterator: playersInBubble is the same Set stored in allEnabledPlayers,
+        // so removing via the map while iterating throws ConcurrentModificationException.
+        List<UUID> leftBubble = new ArrayList<>();
+        Iterator<UUID> iterator = playersInBubble.iterator();
+        while (iterator.hasNext()) {
+            UUID uuid = iterator.next();
             Player p = Bukkit.getPlayer(uuid);
-            if (p != null && !bubbledEntities.contains(p)) {
-                allEnabledPlayers.get(b.getLocation()).remove(p.getUniqueId());
-                checkPlayer(p.getUniqueId());
+            if (p == null) {
+                iterator.remove();
+            } else if (!bubbledEntities.contains(p)) {
+                iterator.remove();
+                leftBubble.add(uuid);
             }
+        }
+
+        for (UUID uuid : leftBubble) {
+            checkPlayer(uuid);
         }
     }
 
@@ -93,6 +105,9 @@ public class FlyingBubble extends AMachine {
 
         if (!allUuids.contains(u)) {
             Player p = Bukkit.getPlayer(u);
+            if (p == null) {
+                return;
+            }
             p.setAllowFlight(false);
             p.setFlying(false);
             p.setFallDistance(0.0f);
@@ -104,13 +119,10 @@ public class FlyingBubble extends AMachine {
 
             @Override
             public void onPlayerBreak(BlockBreakEvent e, ItemStack tool, List<ItemStack> drops) {
-                if (allEnabledPlayers.get(e.getBlock().getLocation()) != null) {
-                    for (UUID uuid : allEnabledPlayers.get(e.getBlock().getLocation())) {
-                        Player p = Bukkit.getPlayer(uuid);
-                        if (p != null) {
-                            allEnabledPlayers.get(e.getBlock().getLocation()).remove(p.getUniqueId());
-                            checkPlayer(p.getUniqueId());
-                        }
+                Set<UUID> bubblePlayers = allEnabledPlayers.remove(e.getBlock().getLocation());
+                if (bubblePlayers != null) {
+                    for (UUID uuid : bubblePlayers) {
+                        checkPlayer(uuid);
                     }
                 }
             }
