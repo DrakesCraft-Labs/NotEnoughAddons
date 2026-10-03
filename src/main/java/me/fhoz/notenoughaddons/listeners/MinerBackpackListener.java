@@ -1,8 +1,8 @@
 package me.fhoz.notenoughaddons.listeners;
 
-import com.github.drakescraft_labs.slimefun4.api.player.PlayerBackpack;
-import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
-import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
+import io.github.thebusybiscuit.slimefun4.api.player.PlayerBackpack;
+import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 import me.fhoz.notenoughaddons.NotEnoughAddons;
 import me.fhoz.notenoughaddons.items.backpacks.MinerBackpack;
 import me.fhoz.notenoughaddons.utils.Utils;

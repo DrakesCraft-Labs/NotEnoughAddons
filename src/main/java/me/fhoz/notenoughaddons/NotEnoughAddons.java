@@ -1,15 +1,15 @@
 package me.fhoz.notenoughaddons;
 
-import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
-import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import lombok.SneakyThrows;
 import me.fhoz.notenoughaddons.items.AngelBlock;
 import me.fhoz.notenoughaddons.items.backpacks.MinerBackpack;
 import me.fhoz.notenoughaddons.listeners.MinerBackpackListener;
 import me.fhoz.notenoughaddons.utils.NEAItems;
 import me.fhoz.notenoughaddons.utils.Utils;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
